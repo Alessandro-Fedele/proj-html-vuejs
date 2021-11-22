@@ -3,8 +3,186 @@
 @import "~@fontsource/barlow-semi-condensed/500.css";
 @import "~font-awesome/css/font-awesome.min.css";
 
+// Variables
+$text-gray: #78787a;
+$hover-button: #ec5a57;
+$main-btn-color: #4257ef;
+
+// Utilities 
+.btn-blu-style {
+    background-color: $main-btn-color;
+    font-weight: 500;
+    padding: 0 25px;
+    border: 0;
+}
+
+.btn-pad {
+    padding: 15px 42px;
+}
+
 #app {
     font-family: "Barlow Semi Condensed", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    header {
+        background-color: #060606;
+        padding: 16px 0;
+        .nav-link {
+            color: $text-gray;
+            font-size: 18px;
+            font-weight: 500;
+            margin-right: 25px;
+            &:hover {
+                color: white;
+            }
+            &:active {
+                color: white;
+            }
+        }
+        .new {
+            color: black;
+            background-color: #fff941;
+            font-weight: 500;
+            font-size: .8rem;
+            display: flex;
+            align-items: center;
+            width: 35px;
+            height: 26px;
+            border-radius: 3px;
+            justify-content: center;
+            margin-top: 8px;
+            margin-left: -22px;
+            margin-right: 38px;
+        }
+        button {
+            font-size: 15px;
+            &:hover {
+                background-color: $hover-button;
+            }
+        }
+        .icon-nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 20px;
+            i {
+                padding: 0 12px;
+                color: $text-gray;
+                font-size: 18px;
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+    .hero {
+        background-image: linear-gradient(90deg, rgb(6, 6, 7) 45%, rgba(6, 6, 7, 0) 75%), url(./assets/img/slider82x-scaled.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 120px 78px 200px 70px;
+        h2 {
+            color: #bc0428;
+            font-size: 27px;
+            font-weight: 500;
+        }
+        h1 {
+            font-size: 75px;
+            color: white;
+            line-height: 1;
+        }
+        img {
+            width: 70px;
+        }
+        p {
+            font-size: 23px;
+            font-weight: 400;
+            color: $text-gray;
+        }
+        button {
+            font-size: 18px;
+            &:hover {
+                background-color: $hover-button;
+            }
+        }
+        .btn-dark {
+            background-color: transparent;
+            border: 2px solid rgba(65, 65, 65, 0.753);
+            font-weight: 500;
+            &:hover {
+                color: black;
+                background-color: white;
+                border: 2px solid white;
+            }
+            i {
+                font-size: 14px;
+            }
+        }
+        .play-button {
+            display: block;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background-color: white;
+            margin-left: 150px;
+            i {
+                padding-left: 38px;
+                padding-top: 35px;
+                font-size: 20px;
+            }
+            &:hover {
+                color: $hover-button;
+            }
+        }
+        .demos {
+            right: 50px;
+            display: flex;
+            flex-direction: column;
+            a {
+                background-color: white;
+                margin-bottom: 10px;
+                width: 40px;
+                height: 40px;
+                border-radius: 5px;
+            }
+        }
+    }
+    .section-2 {
+        background-image: linear-gradient(
+        150deg, #0219eb 0%,#d5000b 100%);
+        background-repeat: no-repeat;
+        padding-top: 400px;
+        .s2-container {
+            padding: 70px 160px 10px 160px;
+            p {
+                font-size: 48px;
+                font-weight: 500;
+                color: white;
+            }
+        }
+        .ab-card {
+            top: -70px;
+            left: 0; 
+            right: 0; 
+            margin-left: auto; 
+            margin-right: auto; 
+            .card {
+                border-radius: 4px 4px 40px;
+                background-color: transparent;
+                box-shadow: rgb(0 0 0 / 20%) 0px 10px 30px 0px;
+                border: 0;
+                img {
+                    border-radius: 4px 4px 40px;
+                    position: relative;
+                }
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 4px 4px 40px;
+                    background-color: rgb(6,6,8);
+                    background: linear-gradient(180deg, rgba(3, 4, 15, 0) 11%, rgba(3, 4, 15, 0.7) 100%);
+                }
+            }
+        }
+    }
   }

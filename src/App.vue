@@ -1,11 +1,25 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <header>
+      <Navbar></Navbar>
+    </header>
+    <main>
+      <!-- Sezione 1 - Hero -->
+      <Hero></Hero>
+      <!-- Sezione 2 -->
+      <CardContainer></CardContainer>
+    </main>
+    <footer></footer>
+  </div>
 </template>
 
 <script>
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import CardContainer from "@/components/CardContainer";
 export default {
   name: "App",
-  components: {},
+  components: { Navbar, Hero, CardContainer },
 };
 </script>
 
