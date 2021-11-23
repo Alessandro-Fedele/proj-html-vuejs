@@ -51,6 +51,9 @@ $my-black: #060606;
 .separator {
     width: 70px;
 }
+.w-text {
+    color: white;
+}
 // -----------------------------------------
 #app {
     font-family: "Barlow Semi Condensed", sans-serif;
@@ -504,6 +507,31 @@ $my-black: #060606;
             }
             .card-img-top {
                 width: 55%;
+            }
+        }
+    }
+    .banner-video {
+        background-color: rgba(255, 255, 255, 0);
+        background-image: linear-gradient(
+        151deg, rgba(6, 25, 231, 0.8) 35%, rgba(206, 1, 18, 0.8) 100%), url(./assets/img/banner14-2x.jpg);
+        background-repeat: no-repeat;
+        background-blend-mode: multiply;
+        background-size: cover;
+        height: 700px;
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+            h2 {
+                font-size: 58px;
+                font-weight: 500;
+                color: white;
+            }
+            h3 {
+                color: #fff941;
+                font-size: 38px;
             }
         }
     }

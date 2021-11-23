@@ -22,6 +22,8 @@
       <Hero2></Hero2>
       <!-- Studios-Locations Section  -->
       <StudiosCard></StudiosCard>
+      <!-- Banner Video Section -->
+      <BannerVideo></BannerVideo>
     </main>
     <footer></footer>
   </div>
@@ -38,6 +40,7 @@ import PlanCard from "@/components/PlanCard";
 import ArticleCard from "@/components/ArticleCard";
 import Hero2 from "@/components/Hero2";
 import StudiosCard from "@/components/StudiosCard";
+import BannerVideo from "@/components/BannerVideo";
 export default {
   name: "App",
   components: {
@@ -51,6 +54,7 @@ export default {
     ArticleCard,
     Hero2,
     StudiosCard,
+    BannerVideo,
   },
 };
 </script>
