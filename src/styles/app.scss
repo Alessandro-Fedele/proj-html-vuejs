@@ -7,6 +7,7 @@
 $text-gray: #78787a;
 $hover-button: #ec5a57;
 $main-btn-color: #4257ef;
+$pb20: 20px; 
 
 // Utilities 
 .btn-blu-style {
@@ -15,11 +16,28 @@ $main-btn-color: #4257ef;
     padding: 0 25px;
     border: 0;
 }
-
+.playmarg {
+    margin-left: 150px;
+}
+.play-button {
+    display: block;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: white;
+    i {
+        padding-left: 38px;
+        padding-top: 35px;
+        font-size: 20px;
+    }
+    &:hover {
+        color: $hover-button;
+    }
+}
 .btn-pad {
     padding: 15px 42px;
 }
-
+// -----------------------------------------
 #app {
     font-family: "Barlow Semi Condensed", sans-serif;
     header {
@@ -115,22 +133,6 @@ $main-btn-color: #4257ef;
                 font-size: 14px;
             }
         }
-        .play-button {
-            display: block;
-            width: 90px;
-            height: 90px;
-            border-radius: 50%;
-            background-color: white;
-            margin-left: 150px;
-            i {
-                padding-left: 38px;
-                padding-top: 35px;
-                font-size: 20px;
-            }
-            &:hover {
-                color: $hover-button;
-            }
-        }
         .demos {
             right: 50px;
             display: flex;
@@ -149,6 +151,7 @@ $main-btn-color: #4257ef;
         150deg, #0219eb 0%,#d5000b 100%);
         background-repeat: no-repeat;
         padding-top: 400px;
+        padding-bottom: 160px;
         .s2-container {
             padding: 70px 160px 10px 160px;
             p {
@@ -156,6 +159,28 @@ $main-btn-color: #4257ef;
                 font-weight: 500;
                 color: white;
             }
+            img {
+                width: 70px;
+            }
+            .avatar-cont {
+                margin-top: -12px;
+                img {
+                     border-radius: 50%; 
+                     width: 60px; 
+                     height: 60px;
+                     margin-right: 20px;
+                }
+                span {
+                    display: inline-flex;
+                    align-items: center;
+                    font-size: 21px;
+                    font-weight: 500;
+                    color: white;
+                }
+                .ls {
+                    color: #bcbcbc;
+                }
+            }     
         }
         .ab-card {
             top: -70px;
@@ -205,5 +230,177 @@ $main-btn-color: #4257ef;
                 }
             }
         }
+    }
+    .section-3 {
+        padding-top: 140px;  
+        padding-bottom: 330px;
+        .card-yt {
+            width: 50%;
+            height: 900px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(./assets/img/service15-2x.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 0px 4px 40px 0px;
+            overflow: hidden;
+            top: -50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                cursor: pointer;
+                i {
+                    color: $hover-button;
+                }
+            }
+        }
+        .yt-section {
+            width: 40%;
+            padding-right: 110px;
+            margin-right: 45px;
+            h2 {
+                font-size: 28px;
+                color: $main-btn-color;
+                padding-bottom: $pb20;
+            }
+            h1 {
+                font-size: 62px;
+                padding-bottom: $pb20;
+            }
+            .themeFusion {
+                img {
+                    width: 51px;
+                }
+                button {
+                    border-radius: 0;
+                }
+            }
+            p {
+                font-size: 23px;
+                padding-bottom: $pb20;
+            }
+            button {
+                background-color: #f30031;
+                color: white;
+                &:hover {
+                    background-color: #e94240ea;
+                }
+            }
+            span {
+                color: $text-gray;
+                border: 1px solid rgba(151, 151, 151, 0.527);
+                padding: 3px 5px 5px 0;
+                font-size: 13px;
+                font-weight: 500;
+            }
+        }
+    }
+    .playlist {
+        margin-bottom: 120px;
+        h2 {
+            font-size: 27px;
+            padding-bottom: 40px;
+        }
+        .yt-link {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            font-weight: 500;
+            &:hover {
+                color: $main-btn-color;
+            }
+        }
+        .card {
+            border: 0;
+            img {
+                border-radius: 4px 4px 40px;
+                background-color: transparent;
+                box-shadow: rgb(0 0 0 / 20%) 0px 10px 30px 0px;
+                position: relative;
+                display: flex;
+                transition: all .2s ease-out;
+            }
+            a {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-40%,-150%); 
+                width: 40px;
+                height: 40px;
+                i {
+                    padding-left: 16px;
+                    padding-top: 14px;
+                    font-size: 12px;
+                }
+            }
+            &:hover {
+                cursor: pointer;
+                img {
+                    box-shadow: rgb(0 0 0 / 60%) 0px 10px 30px 0px;
+                    transition: all .2s ease-in;
+                }
+                i {
+                    color: $hover-button;
+                }
+                h4 {
+                    color: $main-btn-color;
+                }
+            }
+            .card-body {
+                text-align: center;
+            }
+            p {
+                font-size: 18px;
+                font-weight: 500;
+                color: $main-btn-color;
+            }
+        }
+    }
+    .mailing-section {
+        background-color: rgb(6, 6, 7);
+        background-image: linear-gradient(
+        90deg, rgb(6, 6, 7) 47%, rgba(6, 6, 7, 0) 76%), url(./assets/img/banner1-2x.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        .container {
+            padding: 130px 0;
+            h2 {
+                color: #bc0428;
+                font-size: 27px;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+            .h1-cont {
+                width: 60%;
+                h1 {
+                    font-weight: 500;
+                    font-size: 58px;
+                    color: white;
+                }
+            }
+            img {
+                width: 70px;
+                margin-bottom: 20px;
+            }
+            input {
+                border: 0;
+                border-radius: 3rem;
+                padding: 0 18px;
+                width: 680px;
+                margin-right: 25px;
+            }
+            button {
+                padding: 10px 70px;
+                &:hover {
+                    background-color: #e94240ea;
+                }
+            }
+            p {
+                font-size: 23px;
+                color: $text-gray;
+                width: 62%;
+                padding-top: 10px;
+            }
+        } 
     }
   }

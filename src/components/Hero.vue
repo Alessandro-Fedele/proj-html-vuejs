@@ -25,7 +25,7 @@
           </div>
         </div>
         <div class="col-4 d-flex justify-content-center align-items-center">
-          <a href="#" class="play-button">
+          <a href="#" class="play-button playmarg">
             <i class="fa fa-play" aria-hidden="true"></i>
           </a>
         </div>
