@@ -4,7 +4,7 @@
       <p>
         "I've failed over and over again in my life. And that is why i succeed."
       </p>
-      <img src="@/assets/img/zigzag.png" alt="separator" />
+      <img class="separator" src="@/assets/img/zigzag.png" alt="separator" />
       <p class="small-p">
         Arcu auctor gravida nisl, congue sit nisi tincidunt eget proin. In
         lacinia lacus donec sed massa in ipsum eros, tristique. Gravida

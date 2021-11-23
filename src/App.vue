@@ -20,6 +20,8 @@
       <ArticleCard></ArticleCard>
       <!-- Section Hero 2  -->
       <Hero2></Hero2>
+      <!-- Studios-Locations Section  -->
+      <StudiosCard></StudiosCard>
     </main>
     <footer></footer>
   </div>
@@ -35,6 +37,7 @@ import MailingSection from "@/components/MailingSection";
 import PlanCard from "@/components/PlanCard";
 import ArticleCard from "@/components/ArticleCard";
 import Hero2 from "@/components/Hero2";
+import StudiosCard from "@/components/StudiosCard";
 export default {
   name: "App",
   components: {
@@ -47,6 +50,7 @@ export default {
     PlanCard,
     ArticleCard,
     Hero2,
+    StudiosCard,
   },
 };
 </script>

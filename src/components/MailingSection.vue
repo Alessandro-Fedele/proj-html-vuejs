@@ -5,7 +5,7 @@
       <div class="h1-cont">
         <h1>Insider offers &amp; flash sales in your inbox every week.</h1>
       </div>
-      <img src="@/assets/img/zigzag.png" alt="separator" />
+      <img class="separator" src="@/assets/img/zigzag.png" alt="separator" />
       <div class="d-flex mb-4">
         <div class="input-group">
           <input type="email" placeholder="Insert your email ...*" />

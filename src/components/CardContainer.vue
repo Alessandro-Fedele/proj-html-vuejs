@@ -16,7 +16,7 @@
         "How you respond to the challenge in the second half will determine what
         you become after the game, whether you are a winner or a lose."
       </p>
-      <img src="@/assets/img/zigzag.png" alt="separator" />
+      <img class="separator" src="@/assets/img/zigzag.png" alt="separator" />
       <div class="d-flex avatar-cont justify-content-center">
         <img src="@/assets/img/avatar-1-2x.jpg" alt="avatar" />
         <span class="pe-3">Brad Johnson</span>

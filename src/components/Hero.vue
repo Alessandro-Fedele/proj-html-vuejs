@@ -5,7 +5,11 @@
         <div class="col-8">
           <h2 class="pb-2">Certified fitness professional</h2>
           <h1>Take control of your health</h1>
-          <img src="@/assets/img/zigzag.png" alt="separator" />
+          <img
+            class="separator"
+            src="@/assets/img/zigzag.png"
+            alt="separator"
+          />
           <p class="pb-4">
             Curabitur non nulla sit amet nisl tempus convallis quis ac lectus
             dolor sit amet.
