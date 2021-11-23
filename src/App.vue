@@ -14,6 +14,12 @@
       <PlaylistCard></PlaylistCard>
       <!-- Mailing section -->
       <MailingSection></MailingSection>
+      <!-- Black Plan Cards Section  -->
+      <PlanCard></PlanCard>
+      <!-- Articles Section -->
+      <ArticleCard></ArticleCard>
+      <!-- Section Hero 2  -->
+      <Hero2></Hero2>
     </main>
     <footer></footer>
   </div>
@@ -26,6 +32,9 @@ import CardContainer from "@/components/CardContainer";
 import YouTubeSection from "@/components/YouTubeSection";
 import PlaylistCard from "@/components/PlaylistCard";
 import MailingSection from "@/components/MailingSection";
+import PlanCard from "@/components/PlanCard";
+import ArticleCard from "@/components/ArticleCard";
+import Hero2 from "@/components/Hero2";
 export default {
   name: "App",
   components: {
@@ -35,6 +44,9 @@ export default {
     YouTubeSection,
     PlaylistCard,
     MailingSection,
+    PlanCard,
+    ArticleCard,
+    Hero2,
   },
 };
 </script>

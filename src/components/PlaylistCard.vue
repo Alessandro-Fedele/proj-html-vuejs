@@ -2,14 +2,14 @@
   <div class="container playlist">
     <div class="d-flex justify-content-between">
       <h2>Featured playlists</h2>
-      <a href="#" class="yt-link">
+      <a href="#" class="my-link">
         <span
           >View all videos
           <i class="fa fa-angle-right ps-2" aria-hidden="true"></i
         ></span>
       </a>
     </div>
-    <div class="row g5">
+    <div class="row g-5">
       <div class="col-4" v-for="(card, i) in videoPrevList" :key="i">
         <div class="card">
           <img :src="card.imgUrl" class="card-img-top mb-2" alt="logo" />
