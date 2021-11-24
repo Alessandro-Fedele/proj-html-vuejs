@@ -8,6 +8,7 @@
         <ul class="navbar-nav">
           <li class="nav-item" v-for="(item, i) in navitemList" :key="i">
             <a
+              @click="setActive(item)"
               class="nav-link"
               :class="item.active ? `active` : ``"
               :href="item.link"
@@ -72,6 +73,16 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    setActive(item) {
+      console.log(item.active);
+      if (!item.active) {
+        item.active = true;
+      } else if (item.active) {
+        item.active = false;
+      }
+    },
   },
 };
 </script>

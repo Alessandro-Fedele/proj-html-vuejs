@@ -25,7 +25,9 @@
       <!-- Banner Video Section -->
       <BannerVideo></BannerVideo>
     </main>
-    <footer></footer>
+    <footer>
+      <Footer></Footer>
+    </footer>
   </div>
 </template>
 
@@ -41,6 +43,7 @@ import ArticleCard from "@/components/ArticleCard";
 import Hero2 from "@/components/Hero2";
 import StudiosCard from "@/components/StudiosCard";
 import BannerVideo from "@/components/BannerVideo";
+import Footer from "@/components/Footer";
 export default {
   name: "App",
   components: {
@@ -55,6 +58,7 @@ export default {
     Hero2,
     StudiosCard,
     BannerVideo,
+    Footer,
   },
 };
 </script>

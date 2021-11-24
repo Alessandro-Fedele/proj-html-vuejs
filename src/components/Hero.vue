@@ -35,14 +35,14 @@
         </div>
       </div>
     </div>
-    <div class="position-absolute demos">
+    <!-- <div class="position-absolute demos">
       <a href="#">
         <i class="fa fa-folder" aria-hidden="true"></i>
       </a>
       <a href="#">
         <i class="fa fa-folder" aria-hidden="true"></i>
       </a>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>
